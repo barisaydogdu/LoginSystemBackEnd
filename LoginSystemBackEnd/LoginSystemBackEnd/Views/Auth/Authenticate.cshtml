@@ -1,0 +1,15 @@
+﻿@model UserLoginModel
+
+<h2>Kullanıcı Girişi</h2>
+
+<form asp-controller="Auth" asp-action="Authenticate" method="post">
+    <div>
+        <label for="username">Kullanıcı Adı</label>
+        <input type="text" id="email" name="email" required />
+    </div>
+    <div>
+        <label for="password">Şifre</label>
+        <input type="password" id="password" name="password" required />
+    </div>
+    <button type="submit">Giriş Yap</button>
+</form>
